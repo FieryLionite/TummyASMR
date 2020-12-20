@@ -1,0 +1,43 @@
+
+<link rel="stylesheet" href="../stylesheets/iframe.css" /> <link rel="stylesheet" href="../stylesheets/monokai.css" /> <script src="../javascripts/prettify.js"></script> <script src="../javascripts/lang-basic.js"></script> <h1 class="title">ex_video_set_scale_mode</h1>
+<h2 class="subtitle">Sets the scale mode for the video</h2>
+
+<h3 class="section">Syntax</h3>
+<code class="syntax">
+	ex_video_set_scale_mode(mode)
+</code>
+
+<table class="arguments">
+	<thead>
+		<tr>
+			<th>Argument</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>mode</td>
+			<td>The scale mode for the video "fill", "cover" or "contain"</td>
+		</tr>
+	</tbody>
+</table>
+
+<small class="returns"><strong>Returns</strong> nothing</small>
+
+<h3 class="section">Description</h3>
+<p class="description">Sets the scale mode for the video. 
+<ul>
+	<li>"fill" the video fills in the container entirely, no letterbox or crop, but stretching may occur</li>
+	<li>"cover" ensures the video covers the container, no letterboxing but cropping may occur</li>
+	<li>"contain" fits the video inside the container but keeps aspect ratio, letterboxing may occur</li>
+</ul>
+</p>
+
+<h3 class="section">Example</h3>
+<pre class="prettyprint lang-c">
+//Set the scale mode for the video to "cover"
+ex_video_set_scale_mode("cover");
+</pre>
+
+<h3 class="section">Minimum Supported Version</h3>
+<small class="min-version">exVideo 1.0.0</small> <script>prettyPrint();</script>

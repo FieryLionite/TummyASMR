@@ -1,0 +1,50 @@
+
+<link rel="stylesheet" href="../stylesheets/iframe.css" /> <link rel="stylesheet" href="../stylesheets/monokai.css" /> <script src="../javascripts/prettify.js"></script> <script src="../javascripts/lang-basic.js"></script> <h1 class="title">ex_video_set_embed_parameters</h1>
+<h2 class="subtitle">Sets the embed parameters for the video</h2>
+
+<h3 class="section">Syntax</h3>
+<code class="syntax">
+	ex_video_set_embed_parameters(autoplay, controls, autohide, interactive)
+</code>
+
+<table class="arguments">
+	<thead>
+		<tr>
+			<th>Argument</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>autoplay</td>
+			<td>If false, ex_video_play() will only load the video, not play it</td>
+		</tr>
+		<tr>
+			<td>controls</td>
+			<td>Whether to show the default video player controls or not</td>
+		</tr>
+		<tr>
+			<td>autohide</td>
+			<td>Whether to auto-hide the player controls</td>
+		</tr>
+		<tr>
+			<td>interactive</td>
+			<td>Whether to allow user interactivity with the video controls/shortcuts</td>
+		</tr>
+	</tbody>
+</table>
+
+<small class="returns"><strong>Returns</strong> nothing</small>
+
+<h3 class="section">Description</h3>
+<p class="description">Sets several embed parameters of the video (HTML5-only). If autoplay is false, ex_video_play() will only load the video, not play it, this is useful mainly for non-autoplaying YouTube videos. Setting controls to true will force to show the video player default controls. Setting autohide to true will hide the controls after a short time. If interactive is set to false, then all interactivity such as click to pause and keyboard shortcuts will be disabled, useful especially on YouTube videos that require non interrupted playback.</p>
+
+<h3 class="section">Example</h3>
+<pre class="prettyprint lang-c">
+//Embed and show an uninterrupted YouTube video
+ex_video_set_embed_parameters(true, false, false, false);
+ex_video_play("https://www.youtube.com/watch?v=nxOE21BtpBI", false);
+</pre>
+
+<h3 class="section">Minimum Supported Version</h3>
+<small class="min-version">exVideo 1.1.2</small> <script>prettyPrint();</script>

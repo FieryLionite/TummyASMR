@@ -1,0 +1,49 @@
+
+<link rel="stylesheet" href="../stylesheets/iframe.css" /> <link rel="stylesheet" href="../stylesheets/monokai.css" /> <script src="../javascripts/prettify.js"></script> <script src="../javascripts/lang-basic.js"></script> <h1 class="title">ex_video_set_angle3d</h1>
+<h2 class="subtitle">Sets the angle of a video in 3D space</h2>
+
+<h3 class="section">Syntax</h3>
+<code class="syntax">
+	ex_video_set_angle3d(x, y, z, perspective)
+</code>
+
+<table class="arguments">
+	<thead>
+		<tr>
+			<th>Argument</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>x</td>
+			<td>The X angle in degrees</td>
+		</tr>
+		<tr>
+			<td>y</td>
+			<td>The Y angle in degrees</td>
+		</tr>
+		<tr>
+			<td>z</td>
+			<td>The Z angle in degrees</td>
+		</tr>
+		<tr>
+			<td>perspective</td>
+			<td>The perspective of the 3D space for the rotation</td>
+		</tr>
+	</tbody>
+</table>
+
+<small class="returns"><strong>Returns</strong> nothing</small>
+
+<h3 class="section">Description</h3>
+<p class="description">Sets the angle (rotation) of the video in 3D space. Note in HTML5, not all browsers might support this.</p>
+
+<h3 class="section">Example</h3>
+<pre class="prettyprint lang-c">
+//Rotate the video in 3D space
+ex_video_set_angle3d(30, 55, 12, 1800);
+</pre>
+
+<h3 class="section">Minimum Supported Version</h3>
+<small class="min-version">exVideo 1.0.0</small> <script>prettyPrint();</script>

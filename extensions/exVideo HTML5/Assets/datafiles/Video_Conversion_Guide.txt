@@ -1,0 +1,9 @@
+Video Convert File HTML5.bat is a Windows batch script to convert video files into mp4, webm and ogv fit for HTML5 web browsers
+
+Before you can use the script, you must have FFMPEG (a free video conversion utility/library) installed on your system, you can get an executable here:
+https://ffmpeg.zeranoe.com/builds/
+
+Download a build like "FFmpeg 32-bit Static", open the package and place ffmpeg.exe
+in your C:\Windows\System32 directory
+
+Then you can drag and drop video files on "Video Convert File HTML5.bat" and it will convert it to suitable formats that you can use with exVideo

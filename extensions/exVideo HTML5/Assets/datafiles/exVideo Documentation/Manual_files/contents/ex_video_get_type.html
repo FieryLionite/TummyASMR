@@ -1,0 +1,22 @@
+
+<link rel="stylesheet" href="../stylesheets/iframe.css" /> <link rel="stylesheet" href="../stylesheets/monokai.css" /> <script src="../javascripts/prettify.js"></script> <script src="../javascripts/lang-basic.js"></script> <h1 class="title">ex_video_get_type</h1>
+<h2 class="subtitle">Gets the file type of the video playing</h2>
+
+<h3 class="section">Syntax</h3>
+<code class="syntax">
+	ex_video_get_type()
+</code>
+
+<small class="returns"><strong>Returns</strong> the type of the video playing</small>
+
+<h3 class="section">Description</h3>
+<p class="description">Gets the video type. Returns "mp4", "m4v", "ogv", "webm" depending on which filetype the browser chose to play (HTML5-only). Will return "embed" if the video is a YouTube embedded video instead (added in exVideo 1.1.2).</p>
+
+<h3 class="section">Example</h3>
+<pre class="prettyprint lang-c">
+//Get the video type
+_value = ex_video_get_type();
+</pre>
+
+<h3 class="section">Minimum Supported Version</h3>
+<small class="min-version">exVideo 1.0.0</small> <script>prettyPrint();</script>

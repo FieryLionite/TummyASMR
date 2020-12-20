@@ -1,0 +1,44 @@
+
+<link rel="stylesheet" href="../stylesheets/iframe.css" /> <link rel="stylesheet" href="../stylesheets/monokai.css" /> <script src="../javascripts/prettify.js"></script> <script src="../javascripts/lang-basic.js"></script> <h1 class="title">ex_video_play</h1>
+<h2 class="subtitle">Loads and plays a video</h2>
+
+<h3 class="section">Syntax</h3>
+<code class="syntax">
+	ex_video_play(filename, loop)
+</code>
+
+<table class="arguments">
+	<thead>
+		<tr>
+			<th>Argument</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>filename</td>
+			<td>The video filename, Included File or YouTube URL (HTML5-only)</td>
+		</tr>
+		<tr>
+			<td>loop</td>
+			<td>Whether the video will loop. true = loop, false = play once</td>
+		</tr>
+	</tbody>
+</table>
+
+<small class="returns"><strong>Returns</strong> true if the video can play or false otherwise</small>
+
+<h3 class="section">Description</h3>
+<p class="description">Loads and plays a video. The loop argument determines whether the video will loop. true = loop, false = play once. The video must have been imported as an Included File in the project, otherwise you may supply a YouTube URL (HTML5-only).</p>
+
+<h3 class="section">Example</h3>
+<pre class="prettyprint lang-c">
+//Load and play the Included File video "test.mp4" once
+ex_video_play(working_directory+"test.mp4", false);
+
+//Load and play a YouTube video once (HTML5-only)
+ex_video_play("https://www.youtube.com/watch?v=nxOE21BtpBI", false);
+</pre>
+
+<h3 class="section">Minimum Supported Version</h3>
+<small class="min-version">exVideo 1.0.0</small> <script>prettyPrint();</script>

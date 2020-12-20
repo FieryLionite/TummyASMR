@@ -1,0 +1,41 @@
+
+<link rel="stylesheet" href="../stylesheets/iframe.css" /> <link rel="stylesheet" href="../stylesheets/monokai.css" /> <script src="../javascripts/prettify.js"></script> <script src="../javascripts/lang-basic.js"></script> <h1 class="title">ex_video_set_position</h1>
+<h2 class="subtitle">Sets the position of the video</h2>
+
+<h3 class="section">Syntax</h3>
+<code class="syntax">
+	ex_video_set_position(x, y)
+</code>
+
+<table class="arguments">
+	<thead>
+		<tr>
+			<th>Argument</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>x</td>
+			<td>The x coordinate for the video</td>
+		</tr>
+		<tr>
+			<td>y</td>
+			<td>The y coordinate for the video</td>
+		</tr>
+	</tbody>
+</table>
+
+<small class="returns"><strong>Returns</strong> nothing</small>
+
+<h3 class="section">Description</h3>
+<p class="description">Sets the position of a video. Default is 0,0.</p>
+
+<h3 class="section">Example</h3>
+<pre class="prettyprint lang-c">
+//Set the position for the video to 32,32
+ex_video_set_position(32, 32);
+</pre>
+
+<h3 class="section">Minimum Supported Version</h3>
+<small class="min-version">exVideo 1.0.0</small> <script>prettyPrint();</script>

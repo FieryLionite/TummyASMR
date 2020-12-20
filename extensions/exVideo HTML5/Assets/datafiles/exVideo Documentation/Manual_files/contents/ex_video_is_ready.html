@@ -1,0 +1,24 @@
+
+<link rel="stylesheet" href="../stylesheets/iframe.css" /> <link rel="stylesheet" href="../stylesheets/monokai.css" /> <script src="../javascripts/prettify.js"></script> <script src="../javascripts/lang-basic.js"></script> <h1 class="title">ex_video_is_ready</h1>
+<h2 class="subtitle">Checks whether a video is ready for playback</h2>
+
+<h3 class="section">Syntax</h3>
+<code class="syntax">
+	ex_video_is_ready()
+</code>
+
+<small class="returns"><strong>Returns</strong> true if video is ready for playback, false if not</small>
+
+<h3 class="section">Description</h3>
+<p class="description">Checks whether a video is ready for playback. Returns true if yes, false if the video is not ready (connection interrupted, buffering etc.).</p>
+
+<h3 class="section">Example</h3>
+<pre class="prettyprint lang-c">
+//Check if video is still loading and draw a text for it
+if (not ex_video_is_ready() and ex_video_is_playing()) {
+    draw_text(x, y, "Buffering...");
+}
+</pre>
+
+<h3 class="section">Minimum Supported Version</h3>
+<small class="min-version">exVideo 1.1.4</small> <script>prettyPrint();</script>
