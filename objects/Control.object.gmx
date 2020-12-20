@@ -61,9 +61,10 @@ sound_panel_create("drink", drink, "belly", true, 0.5, 0, 10);
 //sound_panel_create("groan", "belly", true, 0.5, 0);
 
 sound_panel_create("rain", rain, "environment", false, 0, 0, 1);
+sound_panel_create("snow", snow, "environment", false, 0, 0, 1);
 sound_panel_create("fireplace", fireplace, "environment", false, 0, 0, 1);
 sound_panel_create("typing", typing, "environment", false, 0, 0, 1);
-sound_panel_create("pageflip", typing, "environment", true, 0.5, 0, 9);
+sound_panel_create("pageflip", pageflip, "environment", true, 0.5, 0, 9);
 
 //bt = button_create("Voice", false, false, true);
 //bt.group = "environment";
@@ -84,6 +85,7 @@ sound_panel_create("hiccup", hiccup, "other", true, 0.5, 0, 5);
 sound_panel_create("fart", fart, "other", true, 0.5, 0, 4);
 sound_panel_create("burp", burp, "other", true, 0.5, 0, 5);
 
+button_create("Back to Main Menu", false, false, false);
 button_create("Scenes", false, false, true);
 button_create("Balcony", false, false, false);
 button_create("Autumn", false, false, false);
@@ -223,6 +225,12 @@ sound_indexes[? "calm_breath"] = 6;*/
             <string>switch (command){
     case "":
     break;
+    case "Back to Main Menu":
+        command = "";
+        ex_video_stop();
+        room_goto(rmMainMenu);
+        exit;
+    break;
     case "Disable Individual Sounds":
         room_goto(rmDisable);
     break;
@@ -326,11 +334,11 @@ for (var i=0; i&lt;ds_map_size(sounds);i++){
         }
     }
     if (!flag &amp;&amp; (!soundInfo[? "enable_freq"] ||  soundInfo[? "freq"] &gt; 0)){
-        var chance = 0;
+        var chance = -1;
         if (soundInfo[? "enable_freq"])
             chance = floor(random((1-soundInfo[? "freq"]) *fps*10));
             
-        if (chance == 0)
+        if (chance == 0 || (!soundInfo[? "enable_freq"] &amp;&amp; soundInfo[? "vol"] &gt; 0))
             audio_play_sound(get_random_sound(soundid), 0, false);
             
     }
@@ -411,6 +419,10 @@ draw_sprite(scene_current[? "sprBG"], 0, xx, 0);
 var soundRain = sounds[? "rain"];
 if (scene_current[? "doRain"] &amp;&amp; soundRain[? "vol"] &gt; 0)
     draw_sprite_ext(sprRain, image_index, xx, 0, 2, 2, 0, c_white, soundRain[? "vol"]*2);
+var soundSnow = sounds[? "snow"];
+if (scene_current[? "doRain"] &amp;&amp; soundSnow[? "vol"] &gt; 0)
+    draw_sprite_ext(sprSnow, image_index/2, xx, 0, 2, 2, 0, c_white, soundSnow[? "vol"]*2);
+    
 draw_sprite(scene_current[? "sprWall"], 0, xx, 0);
 scale = scene_current[? "scale"]
 

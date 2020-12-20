@@ -278,6 +278,7 @@
     <sound>sound\eating_soft6</sound>
     <sound>sound\eating_soft5</sound>
     <sound>sound\eating_soft4</sound>
+    <sound>sound\snow1</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprSlideHandle</sprite>
@@ -306,6 +307,7 @@
     </sprites>
     <sprite>sprites\patch</sprite>
     <sprite>sprites\sprRain</sprite>
+    <sprite>sprites\sprSnow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgSidePanel</background>
@@ -381,6 +383,7 @@
     <audiogroup name="humming"/>
     <audiogroup name="typing"/>
     <audiogroup name="eating_soft"/>
+    <audiogroup name="snow"/>
   </audiogroups>
   <TutorialState>
     <IsTutorial>0</IsTutorial>

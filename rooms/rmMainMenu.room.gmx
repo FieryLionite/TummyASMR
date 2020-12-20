@@ -54,10 +54,11 @@
     <instance objName="Scaling" x="32" y="32" name="inst_0A1FBBFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="BtNav" x="238" y="338" name="inst_2C4B203D" locked="0" code="roomid = rmPlayer;&#xA;" scaleX="10.1599998474121" scaleY="3.03125" colour="4294967295" rotation="0"/>
     <instance objName="BtNav" x="235" y="471" name="inst_7BD8213A" locked="0" code="link = &quot;https://fierylion.itch.io/fasmr/devlog/205934/credits&quot;;&#xA;" scaleX="10.1599998474121" scaleY="3.03125" colour="4294967295" rotation="0"/>
-    <instance objName="BtNav" x="377" y="658" name="inst_59EB54B3" locked="0" code="link = &quot;https://discord.com/invite/Vvvgeqw&quot;;&#xA;" scaleX="5.55999994277954" scaleY="2.25" colour="4294967295" rotation="0"/>
-    <instance objName="BtNav" x="567" y="656" name="inst_DB62EA26" locked="0" code="link = &quot;https://www.deviantart.com/fierylion&quot;;&#xA;" scaleX="5.55999994277954" scaleY="2.25" colour="4294967295" rotation="0"/>
-    <instance objName="BtNav" x="741" y="657" name="inst_7BEE2D88" locked="0" code="link = &quot;https://www.pixiv.net/en/users/20718614&quot;;&#xA;" scaleX="4.28999996185303" scaleY="2.21875" colour="4294967295" rotation="0"/>
-    <instance objName="BtNav" x="941" y="656" name="inst_D45D3F32" locked="0" code="link = &quot;https://forum.weightgaming.com/t/fetish-asmr-player-prototype-v0-02-updated-renders-focused-on-belly-sounds/13132?u=fierylion&quot;;&#xA;" scaleX="7.09375" scaleY="2.22000002861023" colour="4294967295" rotation="0"/>
+    <instance objName="BtNav" x="267" y="657" name="inst_59EB54B3" locked="0" code="link = &quot;https://discord.com/invite/Vvvgeqw&quot;;&#xA;" scaleX="5.55999994277954" scaleY="2.25" colour="4294967295" rotation="0"/>
+    <instance objName="BtNav" x="454" y="656" name="inst_DB62EA26" locked="0" code="link = &quot;https://www.deviantart.com/fierylion&quot;;&#xA;" scaleX="5.55999994277954" scaleY="2.25" colour="4294967295" rotation="0"/>
+    <instance objName="BtNav" x="629" y="655" name="inst_7BEE2D88" locked="0" code="link = &quot;https://www.pixiv.net/en/users/20718614&quot;;&#xA;" scaleX="4.28999996185303" scaleY="2.21875" colour="4294967295" rotation="0"/>
+    <instance objName="BtNav" x="827" y="655" name="inst_D45D3F32" locked="0" code="link = &quot;https://forum.weightgaming.com/t/fetish-asmr-player-prototype-v0-02-updated-renders-focused-on-belly-sounds/13132&quot;;&#xA;" scaleX="7.09375" scaleY="2.22000002861023" colour="4294967295" rotation="0"/>
+    <instance objName="BtNav" x="1064" y="656" name="inst_A396BE48" locked="0" code="link = &quot;https://github.com/FieryLionite/TummyASMR&quot;;&#xA;" scaleX="6.46875" scaleY="2.25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

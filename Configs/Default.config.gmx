@@ -217,6 +217,7 @@
     <option_audioGroup20_targets>9223372036854775807</option_audioGroup20_targets>
     <option_audioGroup21_targets>9223372036854775807</option_audioGroup21_targets>
     <option_audioGroup22_targets>9223372036854775807</option_audioGroup22_targets>
+    <option_audioGroup23_targets>9223372036854775807</option_audioGroup23_targets>
     <option_audioGroup2_targets>9223372036854775807</option_audioGroup2_targets>
     <option_audioGroup3_targets>9223372036854775807</option_audioGroup3_targets>
     <option_audioGroup4_targets>9223372036854775807</option_audioGroup4_targets>
@@ -225,7 +226,7 @@
     <option_audioGroup7_targets>9223372036854775807</option_audioGroup7_targets>
     <option_audioGroup8_targets>9223372036854775807</option_audioGroup8_targets>
     <option_audioGroup9_targets>9223372036854775807</option_audioGroup9_targets>
-    <option_audioGroupCount>23</option_audioGroupCount>
+    <option_audioGroupCount>24</option_audioGroupCount>
     <option_author></option_author>
     <option_backimage>nil</option_backimage>
     <option_borderless>False</option_borderless>
@@ -493,12 +494,24 @@
     <option_textureGroup4_parent>&lt;none&gt;</option_textureGroup4_parent>
     <option_textureGroup4_scaled>0</option_textureGroup4_scaled>
     <option_textureGroup4_targets>9223372036854775807</option_textureGroup4_targets>
-    <option_textureGroup_count>5</option_textureGroup_count>
+    <option_textureGroup5_border>2</option_textureGroup5_border>
+    <option_textureGroup5_nocropping>0</option_textureGroup5_nocropping>
+    <option_textureGroup5_parent>&lt;none&gt;</option_textureGroup5_parent>
+    <option_textureGroup5_scaled>0</option_textureGroup5_scaled>
+    <option_textureGroup5_targets>9223372036854775807</option_textureGroup5_targets>
+    <option_textureGroup6_border>2</option_textureGroup6_border>
+    <option_textureGroup6_nocropping>0</option_textureGroup6_nocropping>
+    <option_textureGroup6_parent>&lt;none&gt;</option_textureGroup6_parent>
+    <option_textureGroup6_scaled>0</option_textureGroup6_scaled>
+    <option_textureGroup6_targets>9223372036854775807</option_textureGroup6_targets>
+    <option_textureGroup_count>7</option_textureGroup_count>
     <option_textureGroups0>Default</option_textureGroups0>
     <option_textureGroups1>Balcony</option_textureGroups1>
     <option_textureGroups2>Autumn</option_textureGroups2>
     <option_textureGroups3>Studying</option_textureGroups3>
     <option_textureGroups4>MainMenu</option_textureGroups4>
+    <option_textureGroups5>Rain</option_textureGroups5>
+    <option_textureGroups6>Snow</option_textureGroups6>
     <option_tizen_app_id>http://yourdomain/FASMR</option_tizen_app_id>
     <option_tizen_build_version>0</option_tizen_build_version>
     <option_tizen_display_name>FASMR</option_tizen_display_name>
