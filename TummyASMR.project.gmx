@@ -308,6 +308,7 @@
     <sprite>sprites\patch</sprite>
     <sprite>sprites\sprRain</sprite>
     <sprite>sprites\sprSnow</sprite>
+    <sprite>sprites\sprLoad</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgSidePanel</background>

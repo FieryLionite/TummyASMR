@@ -101,6 +101,7 @@ button_create("load profile", false, false, false);
 button_create("save profile", false, false, false);
 button_create("clear all profiles", false, false, false);
 
+audio_group_num = ds_map_size(sound_indexes);
 
 command = "";
 
@@ -231,9 +232,6 @@ sound_indexes[? "calm_breath"] = 6;*/
         room_goto(rmMainMenu);
         exit;
     break;
-    case "Disable Individual Sounds":
-        room_goto(rmDisable);
-    break;
     case "Normal/Inflation/WG":
         scene_mode ++;
         if (scene_mode &gt; 3)
@@ -254,6 +252,8 @@ sound_indexes[? "calm_breath"] = 6;*/
             break;
         //default profile
         if (choice == 0){
+            room_persistent = false;
+            audio_stop_all();
             room_restart();
             break;
         }    
@@ -338,8 +338,10 @@ for (var i=0; i&lt;ds_map_size(sounds);i++){
         if (soundInfo[? "enable_freq"])
             chance = floor(random((1-soundInfo[? "freq"]) *fps*10));
             
-        if (chance == 0 || (!soundInfo[? "enable_freq"] &amp;&amp; soundInfo[? "vol"] &gt; 0))
-            audio_play_sound(get_random_sound(soundid), 0, false);
+        if (chance == 0 || (!soundInfo[? "enable_freq"] &amp;&amp; soundInfo[? "vol"] &gt; 0)){
+            if (audio_group_is_loaded(audio_group_get_index(soundid)))
+                audio_play_sound(get_random_sound(soundid), 0, false);
+        }
             
     }
     soundid = ds_map_find_next(sounds,soundid);
@@ -381,6 +383,29 @@ if (ds_map_exists(scenes, command)){
 }
     
 scene_counter+= scene_current[? "speed"];
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="72">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.audio_group_loaded++;
 </string>
           </argument>
         </arguments>
@@ -450,6 +475,12 @@ if (setting_get_toggled("Set Individual Sounds")){
     draw_set_halign(fa_center);
     draw_text(room_width/2+100, room_height - 30, "Right click to disable sound")
     draw_set_color(c_black);
+}
+
+if (global.audio_group_loaded &lt; audio_group_num){
+    var c = make_color_rgb(79, 146, 184);
+    draw_healthbar(300, 0, room_width - 300, 25, (global.audio_group_loaded/audio_group_num)*100,
+        c_black, c, c, 0, 1, 0);
 }
 </string>
           </argument>
