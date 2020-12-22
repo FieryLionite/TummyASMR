@@ -8,7 +8,7 @@ autumn background https://www.pexels.com/photo/autumnal-golden-foliage-on-ground
 
 ### Sounds:
 
-flow and gurgle sounds: https://freesound.org/people/Garuda1982/sounds/523824/
+flow and gurgle sounds: https://freesound.org/people/sirplus/sounds/90644/
 
 rain https://freesound.org/people/idomusics/sounds/518863/
 
